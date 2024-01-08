@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraphs and BEM naming convention</title>
+    <style>
+      .main {
+        text-align: justify;
+      }
+
+      .main__heading {
+        font-size: 30px;
+        font-weight: 900;
+      }
+
+      .main__description {
+        color: red;
+      }
+
+      .product {
+        border: 1px solid;
+        display: inline-block;
+      }
+
+      .product__heading {
+        font-size: 40px;
+        font-weight: 900;
+      }
+
+      .product__description {
+        font-size: 20px;
+        color: blue;
+      }
+      .btn {
+        font-size: 10px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 30px;
+      }
+
+      .product__buy {
+        background-color: green;
+      }
+
+      .product__addToCart {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p class="main__heading">Lorem ipsum, dolor sit amet consectetur?</p>
+      <p class="main__description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+        molestias aut! Nemo rem cupiditate mollitia minima suscipit perferendis
+        quam debitis porro eaque. Enim dignissimos sint quam esse consequuntur
+        ipsam alias mollitia quasi adipisci suscipit, quisquam neque, rerum quod
+        cum. Corrupti quod cum ipsa beatae vero laudantium eveniet repellat,
+        praesentium quaerat!
+      </p>
+    </div>
+    <div class="product">
+      <p class="product__heading">Apple iPhone 15</p>
+      <p class="product__description">
+        The phone comes with a 60 Hz refresh rate 6.10-inch touchscreen display
+        offering a resolution of 1179x2556 pixels at a pixel density of 460
+        pixels per inch (ppi).
+      </p>
+      <button class="btn product__buy">Buy Now</button>
+      <button class="btn product__addToCart">Add to cart</button>
+    </div>
+  </body>
+</html>

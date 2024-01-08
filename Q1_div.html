@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting with CSS Q1</title>
+    <link rel="stylesheet" href="external.css" />
+    <style>
+      .secondDiv {
+        height: 150px;
+        background-color: green;
+        border: 1px solid red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- inline CSS is given the first priority -->
+      <div
+        style="
+          height: 150px;
+          background-color: black;
+          border: 1px solid red;
+          color: white;
+        "
+      >
+        <h1>Inline CSS applied</h1>
+      </div>
+
+      <!-- internal CSS given the second priority after inline CSS -->
+      <br />
+      <div class="secondDiv"><h1>Internal CSS Applied</h1></div>
+      <br />
+
+      <!-- external CSS given the last priority after inline and internal-->
+      <div class="thirdDiv"><h1>External CSS Applied</h1></div>
+    </div>
+  </body>
+</html>
